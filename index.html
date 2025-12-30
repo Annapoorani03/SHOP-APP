@@ -1,0 +1,101 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UniShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍 UniShop</h1>
+    <p>One Store – Toys | Clutches | Skincare</p>
+</header>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/23/bf/a7/23bfa774eb503426d3278247aa6aaae3.jpg" alt="Toy">
+        <h3>Teddy Toy</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Teddy Toy')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/236x/a5/89/4e/a5894e6426016f9c2f1e4a04b614ce73.jpg" alt="Clutch">
+        <h3>Designer Clutch</h3>
+        <p>₹899</p>
+        <button onclick="addToCart('Designer Clutch')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://www.dotandkey.com/cdn/shop/articles/image_2.png?v=1739257332&width=1100" alt="Skincare">
+        <h3>Sunscreen</h3>
+        <p>₹699</p>
+        <button onclick="addToCart('Sunscreen')">Add to Cart</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 UniShop | Cloud Deployed Website</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #6a1b9a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #4a148c;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
